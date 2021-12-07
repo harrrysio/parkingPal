@@ -5,6 +5,7 @@ let parkingData;
 let latlon;
 let status;
 var mapx = 0, mapy = 0, mx = 0, my = 0;
+var mapxlatlon = 0, mapylatlon = 0, mxl = 0, myl=0;
 var strName = "";
 var showText = false;
 const mappa = new Mappa('Leaflet');
@@ -50,7 +51,7 @@ function draw() {
         if(showText){
           fill(0);
           textSize(35);
-          text = createA('http://www.google.com/maps/place/' + latlon[1] + "," + latlon[0], strName);
+          text = createA('http://www.google.com/maps/place/' + mxl + "," + myl, strName);
     // text(strName, mx, my);
          text.position(mx, my);
   }
@@ -60,6 +61,8 @@ function draw() {
             // print(streetName);
             mapx = point.x
             mapy = point.y
+            mxl = latlon[1]
+            myl = latlon[0]
             strName = streetName;
 }
     }
@@ -69,6 +72,8 @@ function touchStarted() {
             if(mouseX >= mapx && mouseX <= mapx + 15  && mouseY >= mapy && mouseY <= mapy + 15){
               mx = mapx;
               my = mapy;
+              mapxlatlon = mxl;
+              mapylatlon = myl;
               showText = !showText
             }
 }
