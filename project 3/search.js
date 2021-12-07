@@ -59,11 +59,11 @@ function draw(){
     fill(255);
     noStroke();
     rect(0,862,428,64);
-    homeButton = createImg('assets/home.png', 'home');
+    homeButton = createImg('assets/home_S.png', 'home');
     homeButton.position(32,871);
     homeButton.mousePressed(openMap);
 
-    searchButton = createImg('assets/search_S.png', 'search');
+    searchButton = createImg('assets/search.png', 'search');
     searchButton.position(138,871);
     searchButton.mousePressed(openMap);
 
@@ -102,7 +102,7 @@ function openSearchResult() {
 function openMap() {
 
 
-    window.open("map.html","_self")
+    // window.open("map.html","_self")
 
 
 }

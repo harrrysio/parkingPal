@@ -165,7 +165,7 @@ function mousePressed(){
 function openMap() {
 
 
-    window.open("map.html","_self")
+    // window.open("map.html","_self")
 
 
 }
@@ -189,7 +189,7 @@ function openProfile() {
 function openSearch() {
 
 
-    window.open("search.html","_self")
+    // window.open("search.html","_self")
 
 
 }

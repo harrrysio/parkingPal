@@ -29,7 +29,7 @@ function setup() {
   loadJSON('https://data.sfgov.org/resource/8vzz-qzz9.json', gotData);
 
 
-
+  
 
 }
 function gotData(data) {

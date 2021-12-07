@@ -50,6 +50,9 @@ function setup() {
 
     }
 
+    mapButton = createImg('assets/mapView.png', 'mapView');
+    mapButton.position(315,115);
+    mapButton.mousePressed(openMap);
 }
 
 fill(255);
@@ -58,11 +61,11 @@ rect(0,862,428,64);
 
 homeButton = createImg('assets/home.png', 'home');
 homeButton.position(32,871);
-homeButton.mousePressed(openMap);
+// homeButton.mousePressed(openMap);
 
 searchButton = createImg('assets/search.png', 'search');
 searchButton.position(138,871);
-searchButton.mousePressed(openSearch);
+// searchButton.mousePressed(openSearch);
 
 
 listButton = createImg('assets/list_S.png', 'list');
